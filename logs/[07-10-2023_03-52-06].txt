@@ -1,0 +1,1 @@
+{"level":"error","msg":"failed to initialize db:Error 1045 (28000): Access denied for user 'abay'@'localhost' (using password: NO)","time":"2023-07-10T03:52:06+06:00"}

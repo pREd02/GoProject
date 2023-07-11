@@ -1,0 +1,10 @@
+port: "8000"
+db: 
+  host: "localhost" 
+  port: "3306"
+  username: "abay"
+  dbname: "project"
+auth: 
+  accessTokenTTL: 43200m 
+  refreshTokenTTL: 43200m
+logger_level: "TRACE"
