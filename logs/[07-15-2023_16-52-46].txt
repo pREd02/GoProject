@@ -1,0 +1,30 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /user/signin              --> GoProject/internal/handler.(*Handler).signIn-fm (3 handlers)
+[GIN-debug] POST   /user/signup              --> GoProject/internal/handler.(*Handler).signUp-fm (3 handlers)
+[GIN-debug] POST   /api/organization/register --> GoProject/internal/handler.(*Handler).registerOrganization-fm (4 handlers)
+[GIN-debug] GET    /api/organization/:id     --> GoProject/internal/handler.(*Handler).idOrganization-fm (4 handlers)
+[GIN-debug] POST   /api/projects/create      --> GoProject/internal/handler.(*Handler).createProjects-fm (4 handlers)
+[GIN-debug] GET    /api/projects/:id         --> GoProject/internal/handler.(*Handler).idProjects-fm (4 handlers)
+[GIN-debug] GET    /api/projects/:id/users   --> GoProject/internal/handler.(*Handler).idUserProjects-fm (4 handlers)
+[GIN-debug] POST   /api/projects/submit      --> GoProject/internal/handler.(*Handler).submitProjects-fm (4 handlers)
+{"level":"error","msg":"repo: create user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURNING  id' at line 1","time":"2023-07-15T16:52:50+06:00"}
+[GIN] 2023/07/15 - 16:52:50 | 500 |      502.18µs |             ::1 | POST     "/user/signup"
+{"level":"error","msg":"repo: create user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURNING  id' at line 1","time":"2023-07-15T16:52:51+06:00"}
+[GIN] 2023/07/15 - 16:52:51 | 500 |     417.333µs |             ::1 | POST     "/user/signup"
+{"level":"error","msg":"repo: create user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURNING  id' at line 1","time":"2023-07-15T16:52:51+06:00"}
+[GIN] 2023/07/15 - 16:52:51 | 500 |     348.395µs |             ::1 | POST     "/user/signup"
+{"level":"error","msg":"repo: create user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURNING  id' at line 1","time":"2023-07-15T16:52:52+06:00"}
+[GIN] 2023/07/15 - 16:52:52 | 500 |     453.348µs |             ::1 | POST     "/user/signup"
+{"level":"error","msg":"repo: create user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURNING  id' at line 1","time":"2023-07-15T16:52:53+06:00"}
+[GIN] 2023/07/15 - 16:52:53 | 500 |     229.238µs |             ::1 | POST     "/user/signup"
+{"level":"error","msg":"repo: create user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURNING  id' at line 1","time":"2023-07-15T16:52:57+06:00"}
+[GIN] 2023/07/15 - 16:52:57 | 500 |     298.172µs |             ::1 | POST     "/user/signup"
+{"level":"error","msg":"delivery - signIn - GetUser - repo: get user: Error 1054 (42S22): Unknown column '$1' in 'where clause'","time":"2023-07-15T16:53:04+06:00"}
+[GIN] 2023/07/15 - 16:53:04 | 500 |   12.865478ms |             ::1 | POST     "/user/signin"
+{"level":"error","msg":"repo: create user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURNING  id' at line 1","time":"2023-07-15T16:53:07+06:00"}
+[GIN] 2023/07/15 - 16:53:07 | 500 |     283.503µs |             ::1 | POST     "/user/signup"

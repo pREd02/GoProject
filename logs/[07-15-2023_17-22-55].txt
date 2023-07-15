@@ -1,0 +1,18 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /user/signin              --> GoProject/internal/handler.(*Handler).signIn-fm (3 handlers)
+[GIN-debug] POST   /user/signup              --> GoProject/internal/handler.(*Handler).signUp-fm (3 handlers)
+[GIN-debug] POST   /api/organization/register --> GoProject/internal/handler.(*Handler).registerOrganization-fm (4 handlers)
+[GIN-debug] GET    /api/organization/:id     --> GoProject/internal/handler.(*Handler).idOrganization-fm (4 handlers)
+[GIN-debug] POST   /api/projects/create      --> GoProject/internal/handler.(*Handler).createProjects-fm (4 handlers)
+[GIN-debug] GET    /api/projects/:id         --> GoProject/internal/handler.(*Handler).idProjects-fm (4 handlers)
+[GIN-debug] GET    /api/projects/:id/users   --> GoProject/internal/handler.(*Handler).idUserProjects-fm (4 handlers)
+[GIN-debug] POST   /api/projects/submit      --> GoProject/internal/handler.(*Handler).submitProjects-fm (4 handlers)
+{"level":"error","msg":"delivery - signIn - GetUser - repo: get user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':usermame AND password_hash=:passwor' at line 1","time":"2023-07-15T17:23:01+06:00"}
+[GIN] 2023/07/15 - 17:23:01 | 500 |     532.454µs |             ::1 | POST     "/user/signin"
+{"level":"error","msg":"delivery - signIn - GetUser - repo: get user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':usermame AND password_hash=:passwor' at line 1","time":"2023-07-15T17:23:46+06:00"}
+[GIN] 2023/07/15 - 17:23:46 | 500 |     403.825µs |             ::1 | POST     "/user/signin"

@@ -9,9 +9,9 @@ var (
 type User struct {
 	ID       int    `json:"id" db:"id" `
 	Name     string `json:"name" binding:"required"`
-	Phone    string `json:"phone" db:"phone"`
-	Username string `json:"username" binding:"required"`
-	Password string `json:"password" db:"password_hash" binding:"required"`
+	Phone    string `json:"phone" db:"Phone"`
+	Username string `json:"username" db:"Username" binding:"required"`
+	Password string `json:"password" db:"Password_hash" binding:"required"`
 }
 
 type Auth struct {

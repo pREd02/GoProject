@@ -19,13 +19,14 @@ func NewHandler(services *service.Service, logger *logger.Logger) *Handler {
 func (h *Handler) InitRoutes(writer io.Writer) *gin.Engine {
 	gin.DefaultWriter = writer
 	router := gin.Default()
+	user := router.Group("/user")
+	{
+		user.POST("/signin", h.signIn)
+		user.POST("/signup", h.signUp)
+	}
 	api := router.Group("api", h.userIdentity)
 	{
-		user := api.Group("/user")
-		{
-			user.POST("/signin", h.signIn)
-			user.POST("/signup", h.signUp)
-		}
+
 		organization := api.Group("/organization")
 		{
 			organization.POST("/register", h.registerOrganization)

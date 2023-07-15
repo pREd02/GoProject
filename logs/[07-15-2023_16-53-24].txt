@@ -1,0 +1,18 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /user/signin              --> GoProject/internal/handler.(*Handler).signIn-fm (3 handlers)
+[GIN-debug] POST   /user/signup              --> GoProject/internal/handler.(*Handler).signUp-fm (3 handlers)
+[GIN-debug] POST   /api/organization/register --> GoProject/internal/handler.(*Handler).registerOrganization-fm (4 handlers)
+[GIN-debug] GET    /api/organization/:id     --> GoProject/internal/handler.(*Handler).idOrganization-fm (4 handlers)
+[GIN-debug] POST   /api/projects/create      --> GoProject/internal/handler.(*Handler).createProjects-fm (4 handlers)
+[GIN-debug] GET    /api/projects/:id         --> GoProject/internal/handler.(*Handler).idProjects-fm (4 handlers)
+[GIN-debug] GET    /api/projects/:id/users   --> GoProject/internal/handler.(*Handler).idUserProjects-fm (4 handlers)
+[GIN-debug] POST   /api/projects/submit      --> GoProject/internal/handler.(*Handler).submitProjects-fm (4 handlers)
+{"level":"error","msg":"repo: create user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURN  id' at line 1","time":"2023-07-15T16:53:27+06:00"}
+[GIN] 2023/07/15 - 16:53:27 | 500 |    1.105073ms |             ::1 | POST     "/user/signup"
+{"level":"error","msg":"repo: create user: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'RETURN  id' at line 1","time":"2023-07-15T16:53:27+06:00"}
+[GIN] 2023/07/15 - 16:53:27 | 500 |      311.71µs |             ::1 | POST     "/user/signup"
